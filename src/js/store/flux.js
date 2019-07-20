@@ -10,7 +10,7 @@ const getState = ({ getStore, setStore }) => {
 				{
 					title: "SECOND",
 					background: "white",
-					initial: "white"
+					initial: "black"
 				}
 			]
 		},
