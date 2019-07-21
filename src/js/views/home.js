@@ -18,7 +18,10 @@ export class Home extends React.Component {
 										<br />
 										<br />
 										<span className="text-center">Waiting List </span>
-										<Button variant="info" className="float-right">
+										<Button
+											variant="info"
+											className="float-right"
+											onClick={() => actions.refresh()}>
 											Info
 										</Button>
 										<Table striped bordered hover>
