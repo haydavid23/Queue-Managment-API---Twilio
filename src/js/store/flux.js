@@ -11,7 +11,12 @@ const getState = ({ getStore, setStore }) => {
 		actions: {
 			next: () => {
 				const store = getStore();
-				setStore({ currentPerson: store.customers[0] });
+				setStore({
+					currentPerson: store.customers[0],
+					customers: store.customers.filter(item => {
+						return item != store.customers[0];
+					})
+				});
 			},
 
 			refresh: () => {
