@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
+import "../styles/home.scss";
 
 import { Home } from "./views/home";
 import { Demo } from "./views/demo";
@@ -18,7 +19,7 @@ export class Layout extends React.Component {
 		const basename = process.env.BASENAME || "";
 
 		return (
-			<div className="d-flex flex-column h-100">
+			<div className="d-flex flex-column h-100" id="background">
 				<BrowserRouter basename={basename}>
 					<ScrollToTop>
 						<Navbar />
@@ -28,7 +29,6 @@ export class Layout extends React.Component {
 							<Route path="/single/:theid" component={Single} />
 							<Route render={() => <h1>Not found!</h1>} />
 						</Switch>
-						<Footer />
 					</ScrollToTop>
 				</BrowserRouter>
 			</div>
