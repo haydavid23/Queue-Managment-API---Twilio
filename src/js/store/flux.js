@@ -6,11 +6,12 @@ const getState = ({ getStore, setStore }) => {
 	return {
 		store: {
 			customers: [],
-			test: ["hello", "David"]
+			currentPerson: ""
 		},
 		actions: {
 			next: () => {
-				alert("working");
+				const store = getStore();
+				setStore({ currentPerson: store.customers[0] });
 			},
 
 			refresh: () => {

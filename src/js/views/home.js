@@ -47,7 +47,9 @@ export class Home extends React.Component {
 										<br />
 										<br />
 										<br />
-										<Button variant="success">Next</Button>
+										<Button variant="success" onClick={() => actions.next()}>
+											Next
+										</Button>
 									</div>
 									<div className="col-sm text-center">
 										<br />
@@ -60,13 +62,9 @@ export class Home extends React.Component {
 												</tr>
 											</thead>
 											<tbody>
-												{store.customers.map((item, index) => {
-													return (
-														<tr key={index}>
-															<td>{item}</td>
-														</tr>
-													);
-												})}{" "}
+												<tr>
+													<td>{store.currentPerson}</td>
+												</tr>
 											</tbody>
 										</Table>
 									</div>
