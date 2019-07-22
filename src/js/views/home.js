@@ -18,6 +18,7 @@ export class Home extends React.Component {
 										<br />
 										<br />
 										<span className="title">Waiting List </span>
+										<i className="fas fa-sync-alt" />
 										<Button
 											variant="info"
 											className="float-right"
