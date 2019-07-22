@@ -18,13 +18,7 @@ export class Home extends React.Component {
 										<br />
 										<br />
 										<span className="title">Waiting List </span>
-										<i className="fas fa-sync-alt" />
-										<Button
-											variant="info"
-											className="float-right"
-											onClick={() => actions.refresh()}>
-											Info
-										</Button>
+										<i className="fas fa-sync-alt" id="refresh" onClick={() => actions.refresh()} />
 										<Table striped bordered hover variant="dark">
 											<thead>
 												<tr>
