@@ -17,14 +17,14 @@ export class Home extends React.Component {
 									<div className="col-sm text-center">
 										<br />
 										<br />
-										<span className="text-center">Waiting List </span>
+										<span className="title">Waiting List </span>
 										<Button
 											variant="info"
 											className="float-right"
 											onClick={() => actions.refresh()}>
 											Info
 										</Button>
-										<Table striped bordered hover>
+										<Table striped bordered hover variant="dark">
 											<thead>
 												<tr>
 													<th>#</th>
@@ -54,8 +54,8 @@ export class Home extends React.Component {
 									<div className="col-sm text-center">
 										<br />
 										<br />
-										<span>Being Process</span>
-										<Table striped bordered hover>
+										<span className="title">Being Process</span>
+										<Table striped bordered hover variant="dark">
 											<thead>
 												<tr>
 													<th>Customer Name</th>
