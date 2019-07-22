@@ -11,6 +11,7 @@ const getState = ({ getStore, setStore }) => {
 		actions: {
 			next: () => {
 				const store = getStore();
+				fetch("https://3000-bb39ecd8-e7dc-4502-aa93-b80d01fa1efe.ws-us0.gitpod.io/process");
 				setStore({
 					currentPerson: store.customers[0],
 					customers: store.customers.filter(item => {
